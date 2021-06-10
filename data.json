@@ -1,0 +1,28 @@
+{
+  "images": [
+    {
+      "id": 1,
+      "imageTitle": "Sendr' bud",
+      "imageURL": "https://images.unsplash.com/photo-1586698960173-169c3f3358f5?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1052&q=80",
+      "isLiked": false
+    },
+    {
+      "id": 2,
+      "imageTitle": "Steeze",
+      "imageURL": "https://i.ytimg.com/vi/YjWFFZ14RcM/maxresdefault.jpg",
+      "isLiked": false
+    },
+    {
+      "id": 3,
+      "imageTitle": "Whipn' it",
+      "imageURL": "https://images.unsplash.com/photo-1555422643-328573422dc6?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2223&q=80",
+      "isLiked": false
+    },
+    {
+      "id": 4,
+      "imageTitle": "YEEEEHAAWWW",
+      "imageURL": "https://s3.amazonaws.com/images.gearjunkie.com/uploads/2019/08/67762882_10217906164100400_4793124510960189440_n.jpg",
+      "isLiked": false
+    }
+  ]
+}
