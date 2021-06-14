@@ -9,32 +9,55 @@ function App() {
 
   const likeHandler =  (props) => {
     // setLikedImageCollection(props)
-
-
-    return fetch("http://localhost:3001/images")
-    .then(res => res.json())
-    .then(data => {
-      console.log(data[props.id-1])
-      return fetch("http://localhost:3001/images", {
-            method: "PUT",
-            headers : { 
-                'Content-Type': 'application/json',
-                'Accept': 'application/json'
-               },
-            body: JSON.stringify({
-              images: [
-                {
-                    id : data[props.id-1].id,
-                    imageTitle: data[props.id-1].imageTitle,
-                    imageUrl : data[props.id-1].imageUrl,
-                    isLiked : true
-                }
-              ]
-            })
-      })
+    // console.log(likedImageCollection)
+    // return fetch("http://localhost:3001/images")
+    // .then(res => res.json())
+    // .then(data => {
+      // editJSON(props)
+      console.log(props.isLiked)
+    return fetch(`http://localhost:3001/images/${props.id}`, {
+          method: "PUT",
+          headers : { 
+              'Content-Type': 'application/json',
+              'Accept': 'application/json'
+              },
+          body: JSON.stringify(
+              {
+                  id : props.id,
+                  imageTitle: props.title,
+                  imageURL : props.src,
+                  isLiked : ( props.isLiked ? false : true )
+              }
+          )
+      // })
+    //   .catch((error)=> {
+    //     console.error(error)
+    //   })
     })
+    
   }
 
+  // const editJSON = (props ) => {
+  //   return fetch("http://localhost:3001/images", {
+  //           method: "PUT",
+  //           headers : { 
+  //               'Content-Type': 'application/json',
+  //               'Accept': 'application/json'
+  //              },
+  //           body: JSON.stringify(
+  //               {
+  //                   id : props.id,
+  //                   imageTitle: props.imageTitle,
+  //                   imageUrl : props.imageUrl,
+  //                   isLiked : true
+  //               }
+  //           )
+  //     })
+  //     .catch((error)=> {
+  //       console.error(error)
+  //     })
+  // }
+  
   return (
     <>
       <Container>
