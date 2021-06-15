@@ -2,6 +2,7 @@ import GalleryContainer from './components/GalleryContainer';
 // import 'bootstrap/dist/css/bootstrap.min.css'
 import { Container } from 'react-bootstrap'
 import { useEffect, useState } from 'react'
+import TextInput from './components/TextInput'
 
 
 function App() {
@@ -62,6 +63,7 @@ function App() {
     <>
       <Container>
         <GalleryContainer likeHandler={likeHandler} />
+        <TextInput />
       </Container>
     </>
   );

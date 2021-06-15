@@ -13,6 +13,7 @@ const LikedCollectionPage = (props) => {
         fetch("http://localhost:3001/images")
         .then(response => response.json())
         .then(images  => {
+            // filter out likedimagess and push those to new array
             images.map( image => {
                 if(image.isLiked === true) {
                     setLikedImage(image)

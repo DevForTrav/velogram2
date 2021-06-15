@@ -10,7 +10,7 @@ import LikedCollectionPage from './components/LikedCollectionPage'
 ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
-          <Title/>
+          <Title />
           <Route path='/' exact component={App} />
           <Route path='/new' exact component={UploadImageForm} /> 
           <Route path='/likes' exact component={LikedCollectionPage} /> 

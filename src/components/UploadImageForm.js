@@ -15,7 +15,7 @@ const UploadImageForm = () => {
         .then(data => {
             imageID = ++data.length
         })
-        }
+    }
     createID()
     
     const handleClick = () => {
