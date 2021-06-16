@@ -1,10 +1,7 @@
-# Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 Velogram is an image gallery that renders like-able images via urls from the json database. The likes component is still being built, but feel free to take a look around and add some cool bike photos
 
-
+Front end developed through bootstrap React
 
 
 ## Available Scripts
